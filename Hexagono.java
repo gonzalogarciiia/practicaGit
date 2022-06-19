@@ -13,17 +13,9 @@ package com.mycompany.arrays;
  * 19 abr 2022
  * Hecho por Gonzalo García Muñoz
  */
-public class Hexagono {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        // sout + tab para poner System.out.println("");
-
-        
-        System.out.println("Ejemplo"); // ESTO ES UN COMENTARIO
+public class Hexagono extends PoligonoRegular {
+    public Hexagono(int nLados, int longitudLado){
+           this.nLados = nLados;
+           this.longitudLado = longitudLado;
     }
-
 }
