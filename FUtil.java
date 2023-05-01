@@ -3,7 +3,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+/**
+ * 
+ * @author gonza
+ *
+ */
 public class FUtil {
+	
 	public static boolean fichExiste(String nombreFichero) {
 		boolean existe=true;
 		
