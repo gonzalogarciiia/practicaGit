@@ -18,5 +18,29 @@ public class FUtil {
 		
 		return existe;
 	}
+	
+	public static boolean isPng(String fichImage) {
+		boolean esPng = true;
+		char[] formatoPng = {' ','P','N','G'};
+		
+		try(FileInputStream fis = new FileInputStream(fichImage)){
+			char caracter;
+			
+			for(int i=0;i<formatoPng.length;i++) {
+				caracter = (char) fis.read();
+				if(!(caracter==formatoPng[i]) & i>=1) {
+					esPng=false;
+				}
+			}
+			
+		}catch(FileNotFoundException fnfe) {
+			System.out.println("No encontrado");
+		}catch(IOException ioe) {
+			System.out.println(ioe);
+		}
+		
+		return esPng;
+	}
+	
 
 }
