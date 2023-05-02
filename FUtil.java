@@ -14,6 +14,7 @@ public class FUtil {
 		boolean existe=true;
 		
 		try(FileInputStream fis = new FileInputStream("src/es/maestredam/"+nombreFichero)){
+			System.out.println("Hola");
 			
 		}catch(FileNotFoundException fnfe) {
 			System.out.println("File not found");
